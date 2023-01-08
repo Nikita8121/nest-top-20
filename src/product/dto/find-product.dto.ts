@@ -1,4 +1,7 @@
+import { IsString, IsNumber } from 'class-validator';
 export class FindProductDto {
-    category: string;
-    limit: number;
+  @IsString()
+  category: string;
+  @IsNumber()
+  limit: number;
 }
