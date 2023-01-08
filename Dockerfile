@@ -1,5 +1,4 @@
-FROM alpine:3.16
-ENV NODE_VERSION 19.4.0
+FROM node:19-alpine
 WORKDIR /opt/app
 ADD package.json package.json
 RUN npm install
